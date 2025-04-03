@@ -172,3 +172,15 @@ body {
         margin-right: 0;
     }
 }
+
+/* Adicione estas regras para suavizar a transição */
+#taskList {
+    transition: height 0.3s ease, opacity 0.3s ease;
+    min-height: 50px;
+    opacity: 1;
+    overflow: hidden; /* Importante para evitar saltos durante a transição de altura */
+}
+
+#taskList.loading {
+    opacity: 0.7;
+}

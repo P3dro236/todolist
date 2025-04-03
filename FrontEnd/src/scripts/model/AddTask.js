@@ -4,7 +4,7 @@ export class AddTask{
         this.priority = priority;
     }
     async postTask(){
-        const endpoint = 'http://localhost:8080/task';
+        const endpoint = 'http://192.168.1.14:8080/task';
         const options = {
             method: 'POST',
             headers: {
